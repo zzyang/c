@@ -1,0 +1,18 @@
+!SESSION 2014-09-11 22:36:16.747 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_25
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86 -data /home/demo/mide/workspace
+
+!ENTRY org.eclipse.osgi 2 1 2014-09-11 22:36:23.836
+!MESSAGE NLS missing message: CDTSharedImages_MissingImage in: org.eclipse.cdt.ui.Messages
+
+!ENTRY org.eclipse.osgi 2 1 2014-09-11 22:36:23.840
+!MESSAGE NLS missing message: CElementGrouping_includeGroupingLabel in: org.eclipse.cdt.ui.Messages
+
+!ENTRY org.eclipse.osgi 2 1 2014-09-11 22:36:23.840
+!MESSAGE NLS missing message: CElementGrouping_macroGroupingLabel in: org.eclipse.cdt.ui.Messages
+
+!ENTRY org.eclipse.osgi 2 1 2014-09-11 22:36:23.840
+!MESSAGE NLS missing message: CUIPlugin_jobStartMakeUI in: org.eclipse.cdt.ui.Messages

@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1411981730 source:/home/demo/c/tree/main.cpp
+	"ast.hpp"
+	"parser.hpp"
+	<set>
+	<map>
+	<sstream>
+	<functional>
+	<iostream>
+
+1411567086 /home/demo/c/tree/ast.hpp
+	<set>
+	<vector>
+	<string>
+	<boost/tuple/tuple.hpp>
+	<boost/tuple/tuple_comparison.hpp>
+	<boost/variant.hpp>
+	<boost/optional.hpp>
+
+1411559992 /home/demo/c/tree/parser.hpp
+	"ast.hpp"
+	<string>
+

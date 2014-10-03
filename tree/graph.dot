@@ -1,0 +1,108 @@
+digraph common {
+// ================= abc? ========
+subgraph cluster_regex1 {
+style="dashed";
+node[fontname="times,italic"];
+label="abc?";
+
+node0[fontname="Courier",label="\"ab\"",shape="box",];
+node1[fontname="Courier",label="'c'?",shape="box",style="dotted,",];
+node2[fontname="Times,italic",label="sequence",shape="Mrecord",];
+node2 -> {node0; node1; }
+}
+// ================= ab+c ========
+subgraph cluster_regex2 {
+style="dashed";
+node[fontname="times,italic"];
+label="ab+c";
+
+node3[fontname="Courier",label="'a'",shape="box",];
+node4[fontname="Courier",label="'b'+",shape="box",];
+node4 -> node4 [label="+",color=red,arrowhead=dot];
+node5[fontname="Courier",label="'c'",shape="box",];
+node6[fontname="Times,italic",label="sequence",shape="Mrecord",];
+node6 -> {node3; node4; node5; }
+}
+// ================= (ab)+c ========
+subgraph cluster_regex3 {
+style="dashed";
+node[fontname="times,italic"];
+label="(ab)+c";
+
+node7[fontname="Courier",label="\"ab\"",shape="box",];
+node8[fontname="Times,italic",label="group+",];
+node8 -> node8 [label="+",color=red,arrowhead=dot];
+node8 -> {node7; }
+node9[fontname="Courier",label="'c'",shape="box",];
+node10[fontname="Times,italic",label="sequence",shape="Mrecord",];
+node10 -> {node8; node9; }
+}
+// ================= [^-a\-f-z"\]aaaa-]? ========
+//WARNING: '[^-a\-f-z"\]aaaa-]?' -> '[^"-]af-z]?'
+subgraph cluster_regex4 {
+style="dashed";
+node[fontname="times,italic"];
+label="[^-a\\-f-z\"\\]aaaa-]?";
+
+node11[fontname="Courier",label="'\"'",shape="box",];
+node12[fontname="Courier",label="'-'",shape="box",];
+node13[fontname="Courier",label="']'",shape="box",];
+node14[fontname="Courier",label="'a'",shape="box",];
+node15[fontname="Courier",label="'f…z'",shape="box",];
+node16[fontcolor="red",fontname="Times,italic",label="negated-charset?",style="dotted,",];
+node16 -> {node11; node12; node13; node14; node15; }
+}
+// ================= abc|d ========
+subgraph cluster_regex5 {
+style="dashed";
+node[fontname="times,italic"];
+label="abc|d";
+
+node17[fontname="Courier",label="\"abc\"",shape="box",];
+node18[fontname="Courier",label="'d'",shape="box",];
+node19[fontname="Times,italic",label="alternative",shape="diamond",style="rounded,",];
+node19 -> {node17; node18; }
+}
+// ================= a? ========
+subgraph cluster_regex6 {
+style="dashed";
+node[fontname="times,italic"];
+label="a?";
+
+node20[fontname="Courier",label="'a'?",shape="box",style="dotted,",];
+}
+// ================= .*?(a|b){,9}? ========
+subgraph cluster_regex7 {
+style="dashed";
+node[fontname="times,italic"];
+label=".*?(a|b){,9}?";
+
+node21[fillcolor="gray",fontname="Times,italic",fontsize="10",label="any*?",shape="box",style="filled,dotted,",];
+node21 -> node21 [label="*?",color=blue,arrowhead=odot];
+node22[fontname="Courier",label="'a'",shape="box",];
+node23[fontname="Courier",label="'b'",shape="box",];
+node24[fontname="Times,italic",label="alternative",shape="diamond",style="rounded,",];
+node24 -> {node22; node23; }
+node25[fontname="Times,italic",label="group{,9}?",style="dotted,",];
+node25 -> node25 [label="{,9}?",color=blue,arrowhead=odot];
+node25 -> {node24; }
+node26[fontname="Times,italic",label="sequence",shape="Mrecord",];
+node26 -> {node21; node25; }
+}
+// ================= (XYZ)|(123) ========
+subgraph cluster_regex8 {
+style="dashed";
+node[fontname="times,italic"];
+label="(XYZ)|(123)";
+
+node27[fontname="Courier",label="\"XYZ\"",shape="box",];
+node28[fontname="Times,italic",label="group",];
+node28 -> {node27; }
+node29[fontname="Courier",label="\"123\"",shape="box",];
+node30[fontname="Times,italic",label="group",];
+node30 -> {node29; }
+node31[fontname="Times,italic",label="alternative",shape="diamond",style="rounded,",];
+node31 -> {node28; node30; }
+}
+}
+

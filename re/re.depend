@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1411303591 source:/home/demo/c/re/DFA.c
+	<stdio.h>
+	<ncurses.h>
+
