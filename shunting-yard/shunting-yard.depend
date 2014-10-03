@@ -1,22 +1,22 @@
 # depslib dependency file v1.0
-1412298168 source:/home/demo/c/shunting-yard/RegExConverter.cpp
+1412302271 source:/home/demo/c/shunting-yard/RegExConverter.cpp
 	<map>
 	<string>
 	<set>
 	<stack>
 	<iostream>
 
-1412297702 source:/home/demo/c/shunting-yard/RegExTree.cpp
+1412322106 source:/home/demo/c/shunting-yard/RegExTree.cpp
 	<map>
 	<string>
 	<set>
 	<stack>
+	<queue>
 	<iostream>
 	<sstream>
 	<fstream>
 
-1412298204 source:/home/demo/c/shunting-yard/main.cpp
-	"RegExConverter.cpp"
+1412322597 source:/home/demo/c/shunting-yard/main.cpp
 	"RegExTree.cpp"
 
 1412298168 /home/demo/c/shunting-yard/RegExConverter.cpp
@@ -26,11 +26,12 @@
 	<stack>
 	<iostream>
 
-1412297702 /home/demo/c/shunting-yard/RegExTree.cpp
+1412322106 /home/demo/c/shunting-yard/RegExTree.cpp
 	<map>
 	<string>
 	<set>
 	<stack>
+	<queue>
 	<iostream>
 	<sstream>
 	<fstream>

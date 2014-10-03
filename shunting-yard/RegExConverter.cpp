@@ -96,7 +96,7 @@ class RegExConverter {
 	 * @param regex infix notation
 	 * @return postfix notation
 	 */
-	public:
+
 	  string infixToPostfix(string Regex)
 	  {
 		string postfix;

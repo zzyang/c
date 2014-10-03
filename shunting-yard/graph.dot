@@ -1,46 +1,38 @@
 digraph common {
-label="aa&bb&|*a+&b&b&#&"
-node17[fontname="Courier",label="&",shape="Mrecord",]
-node17 -> node15
-node15[fontname="Courier",label="&",shape="Mrecord",]
-node15 -> node13
+label="(asc)[
+	]*(.*)"
 node13[fontname="Courier",label="&",shape="Mrecord",]
 node13 -> node11
 node11[fontname="Courier",label="&",shape="Mrecord",]
 node11 -> node8
-node8[fontname="Courier",label="*",shape="Mrecord",]
-node8 -> node7
-node7[fontname="Courier",label="|",shape="Mrecord",]
-node7 -> node3
+node8[fontname="Courier",label="&",shape="Mrecord",]
+node8 -> node5
+node5[fontname="Courier",label="&",shape="Mrecord",]
+node5 -> node3
 node3[fontname="Courier",label="&",shape="Mrecord",]
 node3 -> node1
 node1[fontname="Courier",label="a",shape="Mrecord",]
 node3[fontname="Courier",label="&",shape="Mrecord",]
 node3 -> node2
-node2[fontname="Courier",label="a",shape="Mrecord",]
-node7[fontname="Courier",label="|",shape="Mrecord",]
+node2[fontname="Courier",label="s",shape="Mrecord",]
+node5[fontname="Courier",label="&",shape="Mrecord",]
+node5 -> node4
+node4[fontname="Courier",label="c",shape="Mrecord",]
+node8[fontname="Courier",label="&",shape="Mrecord",]
+node8 -> node7
+node7[fontname="Courier",label="*",shape="Mrecord",]
 node7 -> node6
-node6[fontname="Courier",label="&",shape="Mrecord",]
-node6 -> node4
-node4[fontname="Courier",label="b",shape="Mrecord",]
-node6[fontname="Courier",label="&",shape="Mrecord",]
-node6 -> node5
-node5[fontname="Courier",label="b",shape="Mrecord",]
-node8[fontname="Courier",label="*",shape="Mrecord",]
+node6[fontname="Courier",label="[
+	]",shape="Mrecord",]
+node7[fontname="Courier",label="*",shape="Mrecord",]
 node11[fontname="Courier",label="&",shape="Mrecord",]
 node11 -> node10
-node10[fontname="Courier",label="+",shape="Mrecord",]
+node10[fontname="Courier",label="*",shape="Mrecord",]
 node10 -> node9
-node9[fontname="Courier",label="a",shape="Mrecord",]
-node10[fontname="Courier",label="+",shape="Mrecord",]
+node9[fontname="Courier",label=".",shape="Mrecord",]
+node10[fontname="Courier",label="*",shape="Mrecord",]
 node13[fontname="Courier",label="&",shape="Mrecord",]
 node13 -> node12
-node12[fontname="Courier",label="b",shape="Mrecord",]
-node15[fontname="Courier",label="&",shape="Mrecord",]
-node15 -> node14
-node14[fontname="Courier",label="b",shape="Mrecord",]
-node17[fontname="Courier",label="&",shape="Mrecord",]
-node17 -> node16
-node16[fontname="Courier",label="#",shape="Mrecord",]
+node12[fontname="Courier",label="#",shape="Mrecord",]
 }
 

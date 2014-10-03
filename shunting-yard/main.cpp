@@ -1,25 +1,28 @@
-#include "RegExConverter.cpp"
+//#include "RegExConverter.cpp"
 #include "RegExTree.cpp"
 
 int main()
 {
-    RegExConverter rc;
+    //RegExConverter rc;
 
-    string re = "(aa|bb)*a+bb#";
-    //string re = "(abc)#";
+    //string re = "(aa|bb)*[ab]+b.b";
+    string r1;
+    //string re = "[abc]a";
     //string re = "3+4*2?(1-5)^2^3";
+    string re = "(asc)[\x0c\x0a\x0d\x09\x0b]*\x28.*\x29";
+    RegExTree t(re);
 
     string r;
 
-    r = rc.formatRegEx(re);
+    r1 = t.formatRegEx(re);
+    cout << r1 << "\n";
+
+    r = t.infixToPostfix(re);
     cout << r << "\n";
 
-    r = rc.infixToPostfix(re);
-    cout << r << "\n";
+    //RegExTree t(r);
 
-    RegExTree t(r);
-
-    t.ReParseTree();
+    t.ReParseTree(r);
 
     //cout << r << "\n";
 }
